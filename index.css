@@ -1,7 +1,18 @@
-H1 {
-    color: #2c3e50;
+h1 {
+    color: #ecf0f1;
     transition: color 0.5s ease-in-out;
-    text-shadow: 0 0 5px #ffffff;
+    text-shadow: 0 0 7px #2c3e50;
+}
+
+h4 {
+    color: #ecf0f1;
+    transition: color 0.5s ease-in-out;
+    text-shadow: 0 0 7px #2c3e50;
+}
+span {
+    color: #ecf0f1;
+    transition: color 0.5s ease-in-out;
+    text-shadow: 0 0 7px #2c3e50;
 }
 
 body {

@@ -16,3 +16,6 @@ https://unsplash.com/
 ### COLOR
 
 https://flatuicolors.com/
+
+### Weather API
+
