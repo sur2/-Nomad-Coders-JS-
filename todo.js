@@ -19,7 +19,6 @@ function deleteToDo(event) {
 
 function mouseoverEvent() {
     const item = document.querySelector('.toDo_item');
-    
 }
 
 function saveToDos() {
