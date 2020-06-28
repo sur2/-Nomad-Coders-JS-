@@ -57,6 +57,15 @@ input:focus {
     outline: none;
 }
 
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 3em;
+    font-size: 35%;
+    color: #ffffff;
+    text-align: center;
+}
+
 .in-user {
     width: 9em;
     font-size: 200%;
