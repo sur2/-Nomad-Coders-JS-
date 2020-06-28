@@ -11,7 +11,7 @@ function getTime() {
             minutes < 10 ? `0${minutes}` : minutes}:${
                 seconds < 10 ? `0${seconds}` : seconds}`;
 
-    const dayInfo = date.getFullYear() + " " + date.getMonth() + " " + date.getDate();
+    const dayInfo = date.getFullYear() + " " + (date.getMonth() + 1) + " " + date.getDate();
     const day = document.querySelector(".clock-day");
     day.innerText = dayInfo;
     day.style.cssText = "font-size: 200%; text-align: left;";            
