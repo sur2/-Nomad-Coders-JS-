@@ -6,6 +6,16 @@ h1, h4 {
 
 h1 {
     font-size: 700%;
+    width: 100%;
+    height: 100%;
+}
+
+.center {
+    padding-top: 7em;
+}
+
+.js-clock {
+    display: inline-block;
 }
 
 span {
@@ -48,12 +58,12 @@ input:focus {
 }
 
 .in-user {
+    width: 9em;
     font-size: 200%;
-    width: 52%;
 }
 .in-todo {
+    width: 6em;
     font-size: 170%;
-    width: 17.5%;
 }
 
 .btn {
@@ -106,8 +116,17 @@ input:focus {
     font-size: 150%;
 }
 
+.js-toDoForm{
+    margin: 1%;
+}
+
 .js-toDoList {
     font-size: 200%;
     padding: 0%;
     margin: 0%;
+}
+
+.toDo_span:hover {
+    cursor: pointer;
+    border-bottom: solid 0.1em;
 }
