@@ -33,8 +33,8 @@ function paintToDo(text) {
     li.className = 'toDo_item';
     const newId = toDos.length + 1;
     /* delBtn.innerText = "✔ ";  */
-    span.addEventListener("mouseover", mouseoverEvent);
-    span.addEventListener("click", deleteToDo);
+    li.addEventListener("mouseover", mouseoverEvent);
+    li.addEventListener("click", deleteToDo);
     span.innerText = text;
     /* li.appendChild(delBtn); */
     li.appendChild(span);
@@ -51,8 +51,10 @@ function paintToDo(text) {
 function handleSubmit(event) {
     event.preventDefault();
     const currentValue = toDoInput.value;
-    paintToDo(currentValue);
-    toDoInput.value = "";
+    if(currentValue != "") {
+        paintToDo(currentValue);
+        toDoInput.value = "";
+    }
 }
 
 function loadToDos() {
