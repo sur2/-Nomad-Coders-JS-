@@ -1,11 +1,11 @@
 h1, h4 {
-    color: #ecf0f1;
+    color: #ffffff;
     transition: color 0.5s ease-in-out;
-    
     margin: 0%;
 }
+
 h1 {
-    font-size:700%;
+    font-size: 700%;
 }
 
 span {
@@ -24,14 +24,36 @@ body {
     text-align: center;
 }
 
-input, input::placeholder {
-    font-size: 170%;
-    border: none;
+input {
     margin: 1%;
     background: transparent;
-    color: #ecf0f1;
-    height: 2EM;
+    color: #ffffff;
     text-align:center;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom-width: 0.1em;
+    border-bottom-color: #ffffff;
+}
+
+input::placeholder {
+    font-size: 100%;
+    background: transparent;
+    color: #ffffff;
+    text-align:center;
+}
+
+input:focus {
+    outline: none;
+}
+
+.in-user {
+    font-size: 200%;
+    width: 52%;
+}
+.in-todo {
+    font-size: 170%;
+    width: 17.5%;
 }
 
 .btn {
@@ -43,10 +65,15 @@ input, input::placeholder {
 }
 
 .form,
-.greeting {
+.greetings {
     display: none;
     border: none;
-    color: #ecf0f1;
+    color: #ffffff;
+    font-size: 170%
+}
+
+.greetings {
+    font-size: 300%;
 }
 
 .showing {
@@ -79,6 +106,8 @@ input, input::placeholder {
     font-size: 150%;
 }
 
-.js-toDoForm {
-    
+.js-toDoList {
+    font-size: 200%;
+    padding: 0%;
+    margin: 0%;
 }

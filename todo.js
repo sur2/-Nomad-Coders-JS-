@@ -17,19 +17,26 @@ function deleteToDo(event) {
     saveToDos();
 }
 
+function mouseoverEvent() {
+    const item = document.querySelector('.toDo_item');
+    
+}
+
 function saveToDos() {
     localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
 }
 
 function paintToDo(text) {
     const li = document.createElement('li');
-    const delBtn = document.createElement('button');
+    /* const delBtn = document.createElement('button');  */
     const span = document.createElement('span');
+    li.className = 'toDo_item';
     const newId = toDos.length + 1;
-    delBtn.innerText = "❌";
-    delBtn.addEventListener("click", deleteToDo);
+    /* delBtn.innerText = "✔ ";  */
+    span.addEventListener("mouseover", mouseoverEvent);
+    span.addEventListener("click", deleteToDo);
     span.innerText = text;
-    li.appendChild(delBtn);
+    /* li.appendChild(delBtn); */
     li.appendChild(span);
     li.id = newId;
     toDoList.appendChild(li);
